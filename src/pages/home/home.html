@@ -1,14 +1,18 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Tooltips
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <button ion-button tooltip="Tooltip com posição cima" positionV="top" >Tooltip cima</button>
+  <button ion-button tooltip="Tooltip com posição baixo" positionV="bottom">Tooltip baixo </button>
+  <button ion-button tooltip="Tooltip posição de seta" arrow positionV="top" >Tooltip seta</button>
+  <button ion-button tooltip="Tooltip sem posição" >Tooltip sem posição</button>
+
+  <button ion-button [tooltip]="tootipText" duration="10000" arrow positionH="right">Tooltip direita </button>
+  <button ion-button tooltip="Tooltip posição esquerda" arrow positionH="left" >Tooltip esquerda</button>
+  
 </ion-content>

@@ -7,8 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+tootipText = "Tooltip posição direita";
+
   constructor(public navCtrl: NavController) {
 
   }
+
+
 
 }
